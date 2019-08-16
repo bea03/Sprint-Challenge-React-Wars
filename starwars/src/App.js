@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from "axios";
+import StarWars from "./components/StarWars";
 
 import './App.css';
 
@@ -13,9 +14,9 @@ const App = () => {
   useEffect(() => {
     axios
       .get("https://swapi.co/api/people/")
-      .then(data => {
-        console.log(data);
-        setCharacter(data.data.results); //without the empty array bracket, this line of code causes it to continually get data from axios
+      .then(response => {
+        console.log(response.data.results);
+        setCharacter(response.data.results); //without the empty array bracket, this line of code causes it to continually get data from axios
       })
       .catch(err => {
         console.log("Error", err);
@@ -24,7 +25,8 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1 className="Header">React Wars</h1>
+    
+      {character.map(data => <StarWars key={data.name} name={data.name} height={data.height} />)}
     </div>
   );
 }
