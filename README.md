@@ -25,14 +25,15 @@ In this challenge, create a web page that presents a styled list of Star Wars ch
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
 - [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
-
+  **React makes it easy to build large web apps that are easier to update.**
 - [ ] What does it mean to _think_ in react?
-
+  **You see things on the page as components making up larger components.**
 - [ ] Describe state.
-
+  **The state of something determines how the page will render it and what it will do**
 - [ ] Describe props.
-
+  **Information that is passed from a higher up parent element to a child element. Props need to be high enough for all the child elements to access the information needed.**
 - [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
+**When a component is capable of returning a different output for the same state & props, this is called a side effect. The useEffect() hook is  a React tool used to prevent bugs from side effects.**
 
 ## Project Set Up
 
@@ -60,7 +61,7 @@ Follow these steps for completing your project:
 
 Your finished project must include all of the following requirements:
 
-- [ ] Fetch a list of Star Wars characters from the [Star Wars API (or SWAPI)](https://swapi.co/) and render them to the screen. 
+- [ ] Fetch a list of Star Wars characters from the [Star Wars API (or SWAPI)](https://swapi.co/) and render them to the screen.
 - [ ] Follow the documentation to learn how to fetch a list of "people". However, don't spend _too_ long on this. Here is a link for you to follow if you've looked around the docs for about 15 minutes or so and haven't found where to go - [Secret Link to Awesomeness 🤫](https://swapi.co/documentation#people).
 - [ ] Set the data you fetch to state.
 - [ ] Map over the list and render a component for each character on the page.
