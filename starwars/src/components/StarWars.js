@@ -1,16 +1,15 @@
 import React from "react";
-//import { Image } from 'semantic-ui-react';
-import './StarWars.scss';
+import "../App.scss"
+import { Card } from 'semantic-ui-react';
 
 function StarWars(props) {
   console.log(props);
   return (
-      <div className="cards">
-          <h2>{props.name}</h2>
-          <p>{props.height}</p>
-      </div>
+      <Card className="cards">
+          <Card.Header className="name">{props.name}</Card.Header>
+          <Card.Description className="height">Height: {props.height}</Card.Description>
+      </Card>
   );
 }
-
 
 export default StarWars;

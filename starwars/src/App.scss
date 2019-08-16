@@ -1,0 +1,28 @@
+.App {
+  text-align: center;
+
+
+  .title {
+    color: #443e3e;
+    text-shadow: 1px 1px 5px #fff;
+    font-family: 'Electrolize', sans-serif !important;
+    letter-spacing: 0.175em;
+    padding: 1.5em 2em !important;
+  }
+
+  .cards {
+
+    padding: 1.5em 2em !important;
+
+    .name {
+      font-family: 'Electrolize', sans-serif;
+      letter-spacing: 0.175em;
+    }
+
+    .height {
+      font-family: 'Lato', sans-serif;
+      letter-spacing: 0.125em;
+    }
+  }
+  /* write your parent styles in here for your App.js */
+}

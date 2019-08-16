@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import axios from "axios";
 import StarWars from "./components/StarWars";
+import { Header } from 'semantic-ui-react';
 
-import './App.css';
+
+import './App.scss';
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
@@ -25,7 +27,7 @@ const App = () => {
 
   return (
     <div className="App">
-    
+      <Header className="title" as='h1'>10 StarWars Characters Name & Height</Header>
       {character.map(data => <StarWars key={data.name} name={data.name} height={data.height} />)}
     </div>
   );
